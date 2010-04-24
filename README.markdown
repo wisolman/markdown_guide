@@ -1,7 +1,7 @@
 Markdown Guide Extension
 =======================
 
-* Version: 0.1 Beta
+* Version: 1.0
 * Author: Carson Sasser (sassercw@cox.net)
 * Build Date: 22 April 2010
 * Requirements: Only tested on Symphony CMS 2.0.8RC1
@@ -23,6 +23,6 @@ TODO
 Change Log
 ----------
 
-Version 1.0 - 20 April 2010
+Version 1.0 - 22 April 2010
 
 - Initial Release
