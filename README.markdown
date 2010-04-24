@@ -4,7 +4,7 @@ Markdown Guide Extension
 * Version: 0.1 Beta
 * Author: Carson Sasser (sassercw@cox.net)
 * Build Date: 22 April 2010
-* Requirements: Only tested on Symphony 2.0.8RC1
+* Requirements: Only tested on Symphony CMS 2.0.8RC1
 
 Installation
 ------------
@@ -19,3 +19,10 @@ TODO
 ----
 
 * Add an option to the textarea field to suppress the guide even when a markdown text formatter is being used.
+
+Change Log
+----------
+
+Version 1.0 - 20 April 2010
+
+- Initial Release
