@@ -4,7 +4,7 @@ Markdown Guide Extension
 * Version: 1.1
 * Author: Carson Sasser (sassercw@cox.net)
 * Build Date: 7 June 2010
-* Requirements: Tested on Symphony CMS versions 2.0.6, 2.0.7 and 2.0.8RC3
+* Requirements: Tested on Symphony CMS versions 2.0.6, 2.0.7 and 2.0.8RC3. Requires version 1.11 of the Markdown Text Formatter extension.
 
 Installation
 ------------
@@ -13,7 +13,7 @@ Installation
 
 2. Enable it by selecting `Markdown Guide` in the `System -> Extensions` menu, choose Enable from the with-selected menu, and then click Apply.
 
-3. Now the condensed guide will appear below any textarea field that uses one of the markdown text formatter options.
+3. Now a button for showing the condensed guide will appear below any textarea field that uses one of the markdown text formatter options.
 
 TODO
 ----
