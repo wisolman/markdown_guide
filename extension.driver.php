@@ -24,13 +24,19 @@ Class extension_markdown_guide extends Extension {
 			'delegate' => 'ModifyTextareaFieldPublishWidget',
 			'callback' => 'addGuideBelowTextArea'
 			),
+			array(
+			'page' => '/backend/',
+			'delegate' => 'InitaliseAdminPageHead',
+			'callback' => 'initaliseAdminPageHead'
+			)
 		);
 	}
 	
 	public function addGuideBelowTextArea($pointer) {
 		//only show guide when using markdown
-		$formatter = substr($pointer['field']->get('formatter'), 0,  11);
-		if ($formatter != 'pb_markdown') return;
+		$formatter = $pointer['field']->get('formatter');
+		$pattern = '/^markdown/';
+		if (!preg_match($pattern, $formatter)) return;
 
 		//append the textarea here so the guide will show after the textarea in the form
 		$pointer['label']->appendChild($pointer['textarea']);
@@ -39,10 +45,29 @@ Class extension_markdown_guide extends Extension {
 		$pointer['textarea'] = Widget::Label('');
 
 		//retrieve the guide and append it
-		$file = DOCROOT . '/extensions/markdown_guide/guide.txt';
+		switch($formatter){
+			case 'markdown':
+				$file = EXTENSIONS . '/markdown_guide/assets/markdown.txt';
+			break;
+			case 'markdown_extra':
+				$file = EXTENSIONS . '/markdown_guide/assets/markdown_extra.txt';
+			break;
+			case 'markdown_extra_with_smartypants':
+				$file = EXTENSIONS . '/markdown_guide/assets/markdown_extra_with_smartypants.txt';
+			break;
+			case 'markdown_with_purifier':
+				$file = EXTENSIONS . '/markdown_guide/assets/markdown_with_purifier.txt';
+			break;			
+		}
+		
 		$contents = file_get_contents($file);
-		$guide = Widget::Label($contents);
+		$guide = Widget::Label($contents, null, 'markdown_guide');
 		$pointer['label']->appendChild($guide);
+	}
+
+	public function initaliseAdminPageHead($context) {
+		$page = $context['parent']->Page;
+		$page->addScriptToHead(URL . '/extensions/markdown_guide/assets/toggle_guide.js', 900200);
 	}
 }
 

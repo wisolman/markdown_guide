@@ -1,0 +1,14 @@
+Headers: Precede with a # for each level desired as in: ### This is an h3 header<br />
+Paragraphs: Seperate with a blank line<br />
+Blockquotes: Precede with a >  (two >> will produce a quote within a quote)<br />
+Unorderd lists: Precede list items with a *, + or -<br />
+Ordered lists: Precede list items with a number followed by a period<br />
+Emphasis: *italics*  **bold**  or  _italics_  __bold__<br />
+Links: [link text](http://some-site.com "optional title")<br />
+Automatic links: Enclose a URL in angle brackets to produce a link using the URL itself as the link text<br />
+Images: ![alternate text](/path/to/img.jpg "optional title")<br />
+Code blocks: Indent each line of the block by at least 4 spaces or one tab<br />
+Inline code: Wrap the code with backtick characters<br />
+Horizontal rules: Place 3 or more asterisks, hyphens or underscores on a line by itself<br />
+Line breaks: To force a line break, end the line with 2 spaces and then start a new line<br />
+Backslash escapes: To force a literal display of special markdown characters, precede with a backslash<br />
