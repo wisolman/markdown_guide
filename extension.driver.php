@@ -12,7 +12,7 @@ Class extension_markdown_guide extends Extension {
 			),
 			'name' => 'Markdown Guide',
 			'release-date' => '2010-04-20',
-			'version' => '1.0'
+			'version' => '1.1'
 		);
 		return $info;
 	}

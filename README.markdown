@@ -1,7 +1,7 @@
 Markdown Guide Extension
 =======================
 
-* Version: 1.1
+* Version: 1.2
 * Author: Carson Sasser (sassercw@cox.net)
 * Build Date: 7 June 2010
 * Requirements: Tested on Symphony CMS versions 2.0.6, 2.0.7 and 2.0.8RC3. Requires version 1.11 of the Markdown Text Formatter extension.
@@ -18,10 +18,14 @@ Installation
 TODO
 ----
 
-* Nothing for now
+* Add additional styling when I figure out why the styling interferes with the operation of the show-hide toggle.
 
 Change Log
 ----------
+
+Version 1.2 - 26 July 2010
+
+- Added a little styling to the guide as suggested by Josh Nichols (MrBlank)
 
 Version 1.1 - 7 June 2010
 
