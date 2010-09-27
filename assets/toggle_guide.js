@@ -1,6 +1,15 @@
+// Translation
+
+Symphony.Language.add({
+	'Hide Markdown Guide': false,
+	'Show Markdown Guide': false
+});
+
+// Actual Code
+
 jQuery(document).ready(function() {
 	// Insert anchor that will act as toggle to show and hide the markdown guide
-	jQuery('.markdown_guide').before('<a class="toggleguide">Show Markdown Guide</a>');
+	jQuery('.markdown_guide').before('<a class="toggleguide">' + Symphony.Language.get('Show Markdown Guide') + '</a>');
 	
 	jQuery("a.toggleguide").each(function () {
 		jQuery(this).next('label').hide();
@@ -11,7 +20,7 @@ jQuery(document).ready(function() {
 			// Toggle guide
 			jQuery(this).next('label').slideToggle();
 			jQuery(this).text(jQuery(this).text() 
-				== 'Hide Markdown Guide' ? 'Show Markdown Guide' : 'Hide Markdown Guide');
+				== Symphony.Language.get('Hide Markdown Guide') ? Symphony.Language.get('Show Markdown Guide') : Symphony.Language.get('Hide Markdown Guide'));
 		}
 	);
 

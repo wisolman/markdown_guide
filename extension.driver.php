@@ -47,20 +47,25 @@ Class extension_markdown_guide extends Extension {
 		//retrieve the guide and append it
 		switch($formatter){
 			case 'markdown':
-				$file = EXTENSIONS . '/markdown_guide/assets/markdown.txt';
+				$file = EXTENSIONS . '/markdown_guide/assets/markdown.php';
 			break;
 			case 'markdown_extra':
-				$file = EXTENSIONS . '/markdown_guide/assets/markdown_extra.txt';
+				$file = EXTENSIONS . '/markdown_guide/assets/markdown_extra.php';
 			break;
 			case 'markdown_extra_with_smartypants':
-				$file = EXTENSIONS . '/markdown_guide/assets/markdown_extra_with_smartypants.txt';
+				$file = EXTENSIONS . '/markdown_guide/assets/markdown_extra_with_smartypants.php';
 			break;
 			case 'markdown_with_purifier':
-				$file = EXTENSIONS . '/markdown_guide/assets/markdown_with_purifier.txt';
+				$file = EXTENSIONS . '/markdown_guide/assets/markdown_with_purifier.php';
 			break;			
 		}
 		
-		$contents = file_get_contents($file);
+		include($file);
+		
+		foreach($description AS $line) {
+			$contents .= "<strong>{$line[0]}:</strong> {$line[1]}<br />";
+		}
+		
 		$guide = Widget::Label($contents, null, 'markdown_guide');
 		$pointer['label']->appendChild($guide);
 	}
