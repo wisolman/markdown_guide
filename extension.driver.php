@@ -32,17 +32,17 @@ Class extension_markdown_guide extends Extension {
 		);
 	}
 	
-	public function addGuideBelowTextArea($pointer) {
+	public function addGuideBelowTextArea($context) {
 		//only show guide when using markdown
-		$formatter = $pointer['field']->get('formatter');
+		$formatter = $context['field']->get('formatter');
 		$pattern = '/^markdown/';
 		if (!preg_match($pattern, $formatter)) return;
 
 		//append the textarea here so the guide will show after the textarea in the form
-		$pointer['label']->appendChild($pointer['textarea']);
+		$context['label']->appendChild($context['textarea']);
 
 		//nullify the textarea to prevent another one being appended in field.textarea.php
-		$pointer['textarea'] = Widget::Label('');
+		$context['textarea'] = Widget::Label('');
 
 		//retrieve the guide and append it
 		switch($formatter){
@@ -62,12 +62,12 @@ Class extension_markdown_guide extends Extension {
 		
 		include($file);
 		
-		foreach($description AS $line) {
+		foreach($description as $line) {
 			$contents .= "<strong>{$line[0]}:</strong> {$line[1]}<br />";
 		}
 		
 		$guide = Widget::Label($contents, null, 'markdown_guide');
-		$pointer['label']->appendChild($guide);
+		$context['label']->appendChild($guide);
 	}
 
 	public function initaliseAdminPageHead($context) {

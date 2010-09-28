@@ -23,6 +23,10 @@ TODO
 Change Log
 ----------
 
+Version 1.3 - 28 September 2010
+
+- Added localisation feature built by Nils Werner (phoque). Currently includes only a German translation dictionary file.
+
 Version 1.2 - 26 July 2010
 
 - Added a little styling to the guide as suggested by Josh Nichols (MrBlank)

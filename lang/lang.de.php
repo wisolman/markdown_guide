@@ -12,7 +12,7 @@
 	
 	
 	/*
-	 * EXTENSION: Maintenance Mode
+	 * EXTENSION: Markdown Guide
 	 * Localisation strings
 	 */
 
