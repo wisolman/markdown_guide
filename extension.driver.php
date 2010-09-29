@@ -11,8 +11,8 @@ Class extension_markdown_guide extends Extension {
 				'website' => 'http://carsonsasser.com/'
 			),
 			'name' => 'Markdown Guide',
-			'release-date' => '2010-04-20',
-			'version' => '1.1'
+			'release-date' => '2010-09-28',
+			'version' => '1.3'
 		);
 		return $info;
 	}
