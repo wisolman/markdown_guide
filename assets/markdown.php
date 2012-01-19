@@ -1,4 +1,4 @@
-<?
+<?php
 
 $description = array(
 	array(__('Headers'), __('Precede with a # for each level desired as in: ### This is an h3 header')),
