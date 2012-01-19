@@ -42,7 +42,7 @@
 		'Precede with a >  (two >> will produce a quote within a quote)' => 
 		'Zeile mit > beginnen (zwei >> erzeugen einen Zitatblock in einem Zitatblock)',
 		
-		'Unorderd lists' => 
+		'Unordered lists' => 
 		'Unsortierte Listen',
 		
 		'Precede list items with a *, + or -' => 

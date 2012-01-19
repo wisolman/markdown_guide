@@ -42,7 +42,7 @@
 		'Precede with a >  (two >> will produce a quote within a quote)' => 
 		'Precedido com um > (dois >> irá produzir uma citação dentro de uma citação)',
 		
-		'Unorderd lists' => 
+		'Unordered lists' => 
 		'Lista Desordenada',
 		
 		'Precede list items with a *, + or -' => 

@@ -4,7 +4,7 @@ $description = array(
 	array(__('Headers'), __('Precede with a # for each level desired as in: ### This is an h3 header')),
 	array(__('Paragraphs'), __('Seperate with a blank line')),
 	array(__('Blockquotes'), __('Precede with a >  (two >> will produce a quote within a quote)')),
-	array(__('Unorderd lists'), __('Precede list items with a *, + or -')),
+	array(__('Unordered lists'), __('Precede list items with a *, + or -')),
 	array(__('Ordered lists'), __('Precede list items with a number followed by a period')),
 	array(__('Emphasis'), __('*italics*  **bold**  or  _italics_  __bold__')),
 	array(__('Links'), __('[link text](http://some-site.com "optional title")')),

@@ -1,9 +1,9 @@
 Markdown Guide Extension
 =======================
 
-* Version: 1.4
+* Version: 1.5
 * Author: Carson Sasser (sassercw@cox.net)
-* Build Date: 28 September 2010
+* Build Date: 17 January 2012
 * Requirements: Tested on Symphony CMS versions 2.0.6, 2.0.7 and 2.1.1. Requires version 1.11 of the Markdown Text Formatter extension.
 
 Installation
@@ -22,6 +22,10 @@ TODO
 
 Change Log
 ----------
+
+Version 1.5 - 17 January 2012
+
+- Corrected a typographical error found by Martin Janiczek
 
 Version 1.4 - 24 February 2011
 
