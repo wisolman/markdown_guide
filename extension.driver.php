@@ -71,7 +71,7 @@ Class extension_markdown_guide extends Extension {
 	}
 
 	public function initaliseAdminPageHead($context) {
-		$page = $context['parent']->Page;
+		$page = Administration::instance()->Page;
 		$page->addScriptToHead(URL . '/extensions/markdown_guide/assets/toggle_guide.js', 900200);
 	}
 }
