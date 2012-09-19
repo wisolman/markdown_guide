@@ -8,11 +8,11 @@ Class extension_markdown_guide extends Extension {
 			'author' => array(
 				'email' => 'sassercw@cox.net',
 				'name' => 'Carson Sasser',
-				'website' => 'http://carsonsasser.com/'
+				'website' => 'http://tech.carsonsasser.com/'
 			),
 			'name' => 'Markdown Guide',
-			'release-date' => '2010-09-28',
-			'version' => '1.3'
+			'release-date' => '2012-07-18',
+			'version' => '1.7'
 		);
 		return $info;
 	}
