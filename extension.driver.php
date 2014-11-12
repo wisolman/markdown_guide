@@ -6,13 +6,13 @@ Class extension_markdown_guide extends Extension {
 	public function about() {
 		$info = array(
 			'author' => array(
-				'email' => 'sassercw@cox.net',
-				'name' => 'Carson Sasser',
-				'website' => 'http://carsonsasser.com/'
+				'email' => 'stuart@eyes-down.net',
+				'name' => 'Stuart Palmer, Carson Sasser',
+				'website' => 'http://www.eyes-down.net'
 			),
 			'name' => 'Markdown Guide',
-			'release-date' => '2010-09-28',
-			'version' => '1.3'
+			'release-date' => '2014-11-12',
+			'version' => '1.6'
 		);
 		return $info;
 	}
