@@ -6,13 +6,13 @@ Class extension_markdown_guide extends Extension {
 	public function about() {
 		$info = array(
 			'author' => array(
-				'email' => 'sassercw@cox.net',
-				'name' => 'Carson Sasser',
-				'website' => 'http://carsonsasser.com/'
+				'email' => 'stuart@eyes-down.net',
+				'name' => 'Stuart Palmer, Carson Sasser',
+				'website' => 'http://www.eyes-down.net'
 			),
 			'name' => 'Markdown Guide',
-			'release-date' => '2010-09-28',
-			'version' => '1.3'
+			'release-date' => '2014-11-12',
+			'version' => '1.6'
 		);
 		return $info;
 	}
@@ -45,19 +45,10 @@ Class extension_markdown_guide extends Extension {
 		$context['textarea'] = Widget::Label('');
 
 		//retrieve the guide and append it
-		switch($formatter){
-			case 'markdown':
-				$file = EXTENSIONS . '/markdown_guide/assets/markdown.php';
-			break;
-			case 'markdown_extra':
-				$file = EXTENSIONS . '/markdown_guide/assets/markdown_extra.php';
-			break;
-			case 'markdown_extra_with_smartypants':
-				$file = EXTENSIONS . '/markdown_guide/assets/markdown_extra_with_smartypants.php';
-			break;
-			case 'markdown_with_purifier':
-				$file = EXTENSIONS . '/markdown_guide/assets/markdown_with_purifier.php';
-			break;			
+		if (file_exists(EXTENSIONS . '/markdown_guide/assets/' . $formatter . '.php')) {
+			$file = EXTENSIONS . '/markdown_guide/assets/' . $formatter . '.php';
+		} else {
+			$file = EXTENSIONS . '/markdown_guide/assets/markdown.php';
 		}
 		
 		include($file);
@@ -71,7 +62,7 @@ Class extension_markdown_guide extends Extension {
 	}
 
 	public function initaliseAdminPageHead($context) {
-		$page = $context['parent']->Page;
+		$page = Administration::instance()->Page;
 		$page->addScriptToHead(URL . '/extensions/markdown_guide/assets/toggle_guide.js', 900200);
 	}
 }

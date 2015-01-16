@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="markdown_guide" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
+	<name>Markdown Guide</name>
+	<description>Provides markdown text formatter syntax explanation</description>
+	<repo type="github">https://github.com/stuartgpalmer/markdown_guide</repo>
+	<url type="discuss" />
+	<types>
+		<type>Text Formatters</type>
+	</types>
+	<authors>
+		<author>
+			<name github="symphonycms" symphony="team">Stuart Palmer, Carson Sasser</name>
+			<website>http://getsymphony.com</website>
+		</author>
+	</authors>
+	<releases>
+		<release version="1.6" date="2014-11-12" min="2.4" max="2.5.2">
+			- Compatibility with Symphony 2.4+
+		</release>
+                <release version="1.5" date="2012-11-12" min="2.1" max="2.3">
+                </release>
+
+	</releases>
+</extension>
