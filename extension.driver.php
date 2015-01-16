@@ -45,19 +45,10 @@ Class extension_markdown_guide extends Extension {
 		$context['textarea'] = Widget::Label('');
 
 		//retrieve the guide and append it
-		switch($formatter){
-			case 'markdown':
-				$file = EXTENSIONS . '/markdown_guide/assets/markdown.php';
-			break;
-			case 'markdown_extra':
-				$file = EXTENSIONS . '/markdown_guide/assets/markdown_extra.php';
-			break;
-			case 'markdown_extra_with_smartypants':
-				$file = EXTENSIONS . '/markdown_guide/assets/markdown_extra_with_smartypants.php';
-			break;
-			case 'markdown_with_purifier':
-				$file = EXTENSIONS . '/markdown_guide/assets/markdown_with_purifier.php';
-			break;			
+		if (file_exists(EXTENSIONS . '/markdown_guide/assets/' . $formatter . '.php')) {
+			$file = EXTENSIONS . '/markdown_guide/assets/' . $formatter . '.php';
+		} else {
+			$file = EXTENSIONS . '/markdown_guide/assets/markdown.php';
 		}
 		
 		include($file);
